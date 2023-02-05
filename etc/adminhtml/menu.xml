@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+
+    <menu>
+
+        <add id="Ced_Employee::view" title="Employee" module="Ced_Employee" sortOrder="50" resource="Ced_Employee::view"/>
+
+        <add id="Ced_Employee::menu" title="Employee" module="Ced_Employee" sortOrder="20" parent="Ced_Employee::view" action="employee/index/grid" resource="Ced_Employee::menu"/>
+
+        <add id="Ced_Employee::submenu" title="Attributes" module="Ced_Employee" sortOrder="30" parent="Ced_Employee::view" action="employee/index/empattribute" resource="Ced_Employee::menu"/>
+
+        <add id="Ced_Employee::submenus" title="Department" module="Ced_Employee" sortOrder="40" parent="Ced_Employee::view" action="employee/index/department" resource="Ced_Employee::menu"/>
+
+    </menu>
+
+</config>
